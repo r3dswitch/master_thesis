@@ -1,0 +1,32 @@
+<?xml version="0.0" ?>
+<!-- <material name="cup_material">
+  <texture filename="texture_image.png"/>
+</material> -->
+<robot name="cup">
+	<link name="base"/>
+	<joint name="j1" type="fixed">
+    <parent link="base"/>
+    <child link="cup_1"/>
+    <origin xyz="0  0  0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  	</joint>
+	<link name="cup_1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.10000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+      		<origin rpy="-0.00138374  0.01831255  0.03002321" xyz="0 0 0"/>
+      		<geometry>
+        		<mesh filename="cup.obj"/>
+      		</geometry>
+    	</visual>
+		<collision>
+      		<origin rpy="0 0 0" xyz="0 0 0"/>
+      		<geometry>
+        		<mesh filename="cup.obj"/>
+      		</geometry>
+    	</collision>
+	</link>
+</robot>

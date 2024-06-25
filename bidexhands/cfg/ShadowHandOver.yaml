@@ -1,8 +1,8 @@
 # if given, will override the device setting in gym. 
 env: 
   env_name: "shadow_hand_over"
-  numEnvs: 128
-  envSpacing: 0.75
+  numEnvs: 16
+  envSpacing: 2
   episodeLength: 75
   enableDebugVis: False
   cameraDebug: True
@@ -40,12 +40,6 @@ env:
   printNumSuccesses: False
   maxConsecutiveSuccesses: 0
 
-  asset:
-    assetRoot: "../assets"
-    assetFileName: "mjcf/open_ai_assets/hand/shadow_hand.xml"
-    assetFileNameBlock: "urdf/objects/cube_multicolor.urdf"
-    assetFileNameEgg: "mjcf/open_ai_assets/hand/egg.xml"
-    assetFileNamePen: "mjcf/open_ai_assets/hand/pen.xml"
 
 task:
   randomize: False
